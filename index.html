@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Магазин ролів</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+		<div class="header-container">
+			<img src="img/logo/sushi.png" width="92" alt="Суши и пицца">
+			<div class="title-1">Доставка ролів</div>
+			<p class="lead">Оперативно і смачно</p>
+		</div>
+	</header>
+
+  <div class="container">
+
+    <div class="product" >
+      <!-- Карточка с товаром  -->
+      <div class="product__card" data-id="01">
+        <img class="product__card-img" src="img/roll/los.png" alt="">
+        <div class="product__card-body">
+          <h2 class="title-2">Лосось Пад Тай</h2>
+          <p class="product__card-lead">Склад: Рис, вершковий сир, груша, кунжут, лосось, соус Пад Тай, соус Унагі</p>
+
+          <div class="product__card-wrapper">
+            <div class="items counter-wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+
+            <div class="price">
+              <div class="price__weight" data-item-in-box>6шт/280г</div>
+              <div class="price__currency">325 ₴</div>
+            </div>
+          </div>
+          
+
+          <button data-cart type="button" class="btn ">+ в кошик</button>
+        </div>
+      </div>
+
+      <!-- Карточка с товаром  -->
+      <div class="product__card" data-id="02">
+        <img class="product__card-img" src="img/roll/fila.png" alt="">
+        <div class="product__card-body">
+          <h2 class="title-2">Філадельфія</h2>
+          <p class="product__card-lead">Склад: Рис, лосось, вершковий сир, огірок</p>
+
+          <div class="product__card-wrapper">
+            <div class="items counter-wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+
+            <div class="price">
+              <div class="price__weight" data-item-in-box>8шт/190г</div>
+              <div class="price__currency">285 ₴</div>
+            </div>
+          </div>
+          
+
+          <button data-cart type="button" class="btn ">+ в кошик</button>
+        </div>
+      </div>
+
+      <!-- Карточка с товаром  -->
+      <div class="product__card" data-id="03">
+        <img class="product__card-img" src="img/roll/tun.png" alt="">
+        <div class="product__card-body">
+          <h2 class="title-2">З тунцем</h2>
+          <p class="product__card-lead">Склад: Рис, тунець, вершковий сир, огірок</p>
+
+          <div class="product__card-wrapper">
+            <div class="items counter-wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+
+            <div class="price">
+              <div class="price__weight" data-item-in-box>8шт/300г</div>
+              <div class="price__currency">295 ₴</div>
+            </div>
+          </div>
+          
+
+          <button data-cart type="button" class="btn ">+ в кошик</button>
+        </div>
+      </div>
+
+      <!-- Карточка с товаром  -->
+      <div class="product__card" data-id="04">
+        <img class="product__card-img" src="img/roll/kiot.png" alt="">
+        <div class="product__card-body">
+          <h2 class="title-2">Кіото рол</h2>
+          <p class="product__card-lead">Склад: рис, креветка, авокадо, японський майонез, манго,  сир</p>
+
+          <div class="product__card-wrapper">
+            <div class="items counter-wrapper">
+              <div class="items__control" data-action="minus">-</div>
+              <div class="items__current" data-counter>1</div>
+              <div class="items__control" data-action="plus">+</div>
+            </div>
+
+            <div class="price">
+              <div class="price__weight" data-item-in-box>8шт/309г</div>
+              <div class="price__currency">400 грн</div>
+            </div>
+          </div>
+          
+
+          <button data-cart type="button" class="btn ">+ в кошик</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Корзина -->
+    <div class="basket-wrap">
+      <div class="basket">
+        <h5 class="h5">Ваш заказ</h4>
+        <div data-cart-empty class="basket-alert " role="alert">
+          Кошик порожній
+        </div>
+
+         <!-- Карточки с добавленым товаром -->
+          <div class="cart-wraper">
+            <!-- <div class="cart-item" data-id="01">
+              <div class="cart-item__top">
+                <div class="cart-item__img">
+                  <img src="img/roll/fila.png" alt="">
+                </div>
+                <div class="d">
+                  <div class="h5">Лосось Пад Тай</div>
+                  <div class="small" data-item-in-box>6шт/280г</div>
+                </div>
+              </div>
+              
+              <div class="cart-item__bot">
+                <div class="items counter-wrapper">
+                  <div class="items__control" data-action="minus">-</div>
+                  <div class="items__current" data-counter="">1</div>
+                  <div class="items__control" data-action="plus">+</div>
+                </div>
+
+                <div class="price">
+                  <div class="price__currency">250 ₴</div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+      
+
+        <!-- Стоимость заказа -->
+				<div class="cart-total ">
+					<p data-cart-delivery class="none" >
+						<span class="h5">Доставка:</span> 
+						<span class="h5 free ">250 ₴ грн</span></br>
+						<span class="small">Безкоштовно при замовленні від 800 грн</span> 
+					</p>
+					<p>
+						<span class="h5">Усього:</span>
+							<span class="total-price">0</span>
+							<span class="пкт">₴</span>
+					</p>
+				</div>
+
+
+        <!-- Оформить заказ -->
+					<div id="order-form" class="none" >
+						<h5 class="h5">Оформити Замовленя</h4>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class="btn btn-primary">Замовити</button>
+						</form>
+					</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="./js/calcCartPrice.js"></script>
+  <script src="./js/toggleCartStatus.js"></script>
+  <script src="./js/counter.js"></script> 
+  <script src="./js/cart.js"></script> 
+</body>
+
+</html>
